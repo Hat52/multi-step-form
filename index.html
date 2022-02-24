@@ -9,24 +9,34 @@
     <script src="./index.js" defer></script>
 </head>
 <body>
+    
     <form data-milti-step>
+       <div class="progress-bar-container">
+            <ul id="progressbar">
+                <li class="active">Account Setup</li>
+                <li>Social Profiles</li>
+                <li>Personal Details</li>
+            </ul>
+        </div>
         <div data-step="1" class="card">
-            <h3 class="step-title">Step 1</h3>
+            <h3 class="step-title">Create Your Account</h3>
             <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" placeholder="Email" id="email">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <input type="password" name="password" placeholder="Password" id="password">
             </div>
             <div class="form-group">
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <input type="password" name="confirm-password" placeholder="Confirm Password" id="confirm-password">
             </div>
-            <button type=""button>Next</button>
+            <div class="button-div">
+                <button type="button">Next</button>
+            </div>
         </div>
-        <div data-step="2" class="card">
+        <!-- <div data-step="2" class="card">
             <h3 class="step-title">Step 2</h3>
             <div class="form-group">
                 <label for="first-name">First Name</label>
@@ -44,10 +54,12 @@
                 <label for="Address">Address</label>
                 <input type="textarea" name="Address" id="Address">
             </div>
+            <div class="button-div" style="gap:2%;">
             <button type="button"button>Previous</button>
             <button type="button"button>Next</button>
+            </div>
         </div>
-        <div data-step="3" class="card">
+       <div data-step="3" class="card">
             <h3 class="step-title">Step 2</h3>
             <div class="form-group">
                 <label for="twitter">Twitter</label>
@@ -61,9 +73,11 @@
                 <label for="google-plus">Google Plus</label>
                 <input type="text" name="google-plus" id="google-plus">
             </div>
-            <button type="button"button>Previous</button>
-            <button type="submit"button>Submit</button>
-        </div>
+            <div class="button-div" style="gap:2%;">
+                <button type="button"button>Previous</button>
+                <button type="submit"button>Submit</button>
+            </div>
+        </div> -->
     </form>
 </body>
 </html>
